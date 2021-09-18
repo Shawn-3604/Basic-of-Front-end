@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> My First Web Page </title>
+    <meta name="description" content="Page Description Here" />
+    <meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <style type="text/css">
+        Body {
+            color: red;
+        }
+
+    </style>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("fname");
+            x.value = x.value.toUpperCase();
+        }
+    </script>
+</head> 
+
+<body>
+<p> This is a Sample HTML Document. </p>
+This Javascript function will capitalize my name:
+<p>Enter your name: <input type="text" id="fname" onchange="myFunction()"></p>
+
+<p> This is Line 1. <br> This is Line 2. &nbsp; This is Line 3.</p>
+
+<h1> Header 1 </h1>
+<h2> Header 2 </h2>
+<h3> <font face="arial" size="18" color="black">Header 3</font> </h3>
+
+<p> <strong>Bold Text </strong> <br>
+    <em> Itallic Text </em> <br>
+    <u> Underline Text </u> <br>
+    <strike> Strike Text </strike> <br>
+    <u><strong><em>Bold, Itallic, and Underline Text</em></strong></u>
+</p>
+
+<h3>My Subject</h3>
+
+<ul>
+
+    <li>Data Structure</li>
+    <li>Fundamental Of AI</li>
+    <li>Information Literacy</li>
+    <li>Ethics</li>
+
+</ul>
+
+<h3>Penang Places</h3>
+
+<ol>
+
+    <li>Penaga</li>
+    <li>Kepala Batas</li>
+    <li>Tok Labu</li>
+    <li>Bakar Kapur</li>
+
+</ol>
+
+<h3>Vacation Pictures</h3>
+
+<p>
+
+<a href="http://www.miami.com"><img src="FL.jpg" width="333" height="250"></a>
+<a href="http://www.lasvegas.com"><img src="LV.jpg" width="375" height="250"></a>
+<a href="http://www.newyork.com"><img src="NY.jpg" width="374" height="250"></a>
+<a href="http://www.texas.com"><img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Houston_night.jpg" width="389" height="250"></a>
+
+</p>
+
+<p>
+
+    <a href="http://www.miami.com">Miami</a><br>
+    <a href="http://www.lasvegas.com">Las Vegas</a><br>
+    <a href="http://www.newyork.com">New York</a><br>
+    <a href="http://www.texas.com" target="_blank">Texas</a>
+
+</p>
+</body>
+
+</html>

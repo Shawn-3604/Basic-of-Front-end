@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Web Page</title>
+
+    <style type="text/css">
+    
+    body{
+        margin: 0;
+        padding: 0;
+        line-height: 1.5em;
+    }
+
+    #header{
+        background: black;
+        font-family: arial;
+        height: 100px;
+    }
+
+    #contentwrapper{
+        float: left;
+        width: 100%;
+    }
+
+    #contentcolumn{
+        margin: 0 230px 0 230px;
+    }
+
+    #leftcolumn{
+        float: left;
+        width: 230px;
+        margin-left: -100%;
+        background: #24cbff;
+    }
+
+    #rightcolumn{
+        float: left;
+        width: 230px;
+        margin-left: -230px;/*maintain position at right*/
+        background: #fffb00;
+    }
+
+    .innertext{
+        margin: 20px;
+        font-family: arial;
+        color: #5e5e5e;
+    }
+
+    #footer{
+        clear: left; /*cannot float on Left*/
+        width: 100%;
+        background: black;
+        color: #fff;
+        font-family: arial;
+        text-align: center;
+        padding: 4px;
+    }
+
+    /* #### Navigation Bar #### */
+
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+    }
+
+    li{
+        float: left;
+        border-right: 1px solid #bbb;
+    }
+
+    li:last-child{
+        border-right: none;
+    }
+
+    li a{
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active){
+        background-color: #808080;
+    }
+
+    .active{
+        background-color: #0099ff;
+    }
+
+    /* #### Responsive layout CSS #### */
+
+    @media (max-width: 840px){/*Drop right column down */
+
+    #leftcolumn{
+            margin-left: -100%;
+        }
+
+    #rightcolumn{
+            float: none;
+            width: 100%;
+            margin-left: 0;
+            clear: both;
+        }
+
+    #contentcolumn{
+            margin-right: 0;/*Set margin to LeftColumWidth*/
+        }
+    }
+
+    @media(max-width:600px){/*Drop left column down*/
+    #leftcolumn{
+            float: none;
+            width: 100%;
+            clear: both;
+            margin-left: 0;
+        }
+    
+    #contentcolumn{
+            margin-left: 0;
+        }
+    }
+
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+
+            <ul style="display: inline;">
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="About">About</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="Contact">Contact</a></li>
+            </ul>
+
+        </div>
+
+        <div id="contentwrapper">
+            <div id="contentcolumn">
+                <div class="innertext">
+                    <b>Welcome!!</b><br>
+                    After generating your fancy text symbols, you can copy and paste the "fonts" to most websites and text processors. You could use it to generate a fancy Agario name (yep, weird text in agario is probably generated using a fancy text converter similar to this), to generate a creative-looking instagram, facebook, tumblr, or twitter post, for showing up n00bs on Steam, or just for sending messages full of beautiful text to your buddies.
+
+                    The only exception is if your paste destination has a font which doesn't support some unicode characters. For example, you'll might find that some websites don't use a unicode font, or if they do, the font doesn't have all the characters required. In that case, you'll see a generic "box" in which was created when the browser tries to create a fancy letter. This doesn't mean there's an error with this translator, it just means the website's font doesn't support that character.
+
+                    Mildly off topic, but you might also be interested in Facebook emojis - that's a massive searchable list of all the emojis that you can use in your Facebook posts and chat. And actually, I made an 🐌 Emoji Translator 🎲 which you might like.
+
+                    If there's anything that I can do to improve this online fancy generator thing (e.g. by adding other font styles that you've found), then please let me know in the suggestions box! If you've found new copyable fonts that aren't in this generator, please share them below as well. Thanks!
+                </div>
+            </div>
+
+        </div>
+       
+        <div id="leftcolumn">
+            <div class="innertext">
+                <b>Left Column: <em>230px</em></b><br>
+                Amongst the hundreds of thousands of symbols which are in the unicode text specifications are certain characters which resemble, or are variations of the alphabet and other keyword symbols. For example, if we can take the phrase "thug life" and convert its characters into the fancy letters "𝖙𝖍𝖚𝖌 𝖑𝖎𝖋𝖊" which are a set of unicode symbols. These different sets of fancy text letters are scattered all throughout the unicode specification, and so to create a fancy text translator, it's just a matter of finding these sets of letters and symbols, and linking them to their normal alphabetical equivalents.
+
+                Unicode has a huge number of symbols, and so we're able to create other things like a wingdings translator too. Also if you're looking for messy text, or glitchy text, visit this creepy zalgo text generator (another translator on LingoJam).
+            </div>
+        </div>
+
+        <div id="rightcolumn">
+            <div class="innertext">
+                <b>Right Column: <em>230px</em></b><br>
+                So perhaps, you've generated some fancy text, and you're content that you can now copy and paste your fancy text in the comments section of funny cat videos, but perhaps you're wondering how it's even possible to change the font of your text? Is it some sort of hack? Are you copying and pasting an actual font?
+
+                Well, the answer is actually no - rather than generating fancy fonts, this converter creates fancy symbols. The explanation starts with unicode; an industry standard which creates the specification for thousands of different symbols and characters. All the characters that you see on your electronic devices, and printed in books, are likely specified by the unicode standard.
+            </div>
+        </div>
+
+
+        <div id="footer">Footer</div>
+    </div>
+</body>
+</html>
